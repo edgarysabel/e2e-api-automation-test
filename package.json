@@ -9,6 +9,7 @@
   "author": "Edgar Ysabel",
   "license": "ISC",
   "devDependencies": {
+    "@ngneat/falso": "^7.1.1",
     "cypress": "^13.6.1"
   }
 }
