@@ -102,29 +102,13 @@ This project automates different API responses from https://petstore.swagger.io/
 
 This will run all the tests and generate a report at the end of the execution.
 
-###
-
-Note: local testing is configured to run on Mac/Linux based environments. If running in a windows machine please go to package.json under root directory and replace:
-
-```bash
-  "cy:open": "yarn cypress open --env allure=true --browser chrome",
-  "cy:run": "yarn cypress run --config video=false --env allure=true --browser chrome",
-```
-
-for:
-
-```bash
-  "cy:open": "npx cypress open --env allure=true --browser chrome",
-  "cy:run": "npx cypress run --config video=false --env allure=true --browser chrome",
-```
-
 ## Run CI
 
 CI has been configured with Github Actions for ease of use and integration since project is already hosted on Github. To run it just go to actions and run the workflow `Run QA Integration Tests` under your preferred Branch. Aditionally, pipeline always run whenever there is a new commit.
 
 Note: To be able to do commits or run workflows please reach me at edgarysabel@gmail.com.
 
-#### Test Reports
+## Test Reports
 
 Mochawesome is configured to generate a standalone HTML report after the test execution. You can find the report in the cypress/reports/mochawesome-report directory. Open mochawesome.html in your browser to view the report.
 
