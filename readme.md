@@ -146,5 +146,3 @@ The file cypress.env.json under root directory contains needed credentails for U
 - A custom POM Pattern with Javascript and Cypress was used.
 
 - The static data is stored on `fixture` for each test case.
-
-- The website [automationpractice.com](http://automationpractice.com/index.php) has loading issues and can make tests fail.
