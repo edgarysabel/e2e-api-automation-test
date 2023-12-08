@@ -74,12 +74,6 @@ This project automates different API responses from https://petstore.swagger.io/
 
 - [Node.js](https://nodejs.org/en/download/)
 
-- Must have a Marvel Private Key and Public Key which can be obtained going to [Marvel's developer website](https://developer.marvel.com) and creating a new account.
-
-- An email and password is needed for [automationpractice.com/](http://automationpractice.com/index.php).
-
-  `Note: Both Marvels Keys and Account for UI testing are being included in Main branch, feel free to use this or generate new ones.`
-
 ###
 
 - Clone repository:
