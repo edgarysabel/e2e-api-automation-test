@@ -9,7 +9,7 @@
     "cy:run": "npx cypress run --config video=false --reporter mochawesome --browser chrome",
     "posttest": "npm run report:merge",
     "report:merge": "mochawesome-merge mochawesome-report/*.json > mochawesome-report/output.json",
-    "report:generate": "marge mochawesome-report/output.json --reportDir ./mochawesome-report --reportFilename index --inline"
+    "report:generate": "marge mochawesome-report/output.json --reportDir ./ --reportFilename index --inline"
   },
   "author": "Edgar Ysabel",
   "license": "ISC",

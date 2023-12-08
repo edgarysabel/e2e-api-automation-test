@@ -49,8 +49,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add mochawesome-report/index.html -f
-          git commit -m "[chore] autogenerate Allure report" -a
+          git add ./index.html -f
+          git commit -m "[chore] autogenerate Mochawesome report" -a
 
       - name: Push changes
         if: always()
