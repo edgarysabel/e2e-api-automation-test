@@ -14,7 +14,17 @@ These were the scenerios were automated:
 
     4. Finish buying process.
 
-## API Reference
+## API testing
+
+For API Testing, 3 scenarios where automated:
+
+    1. Create an User.
+
+    2. Search for created user.
+
+    3. Update the name and email and assert.
+
+### API Reference
 
 This project automates different API responses from https://petstore.swagger.io/ using the Cypress framework and the [cypress-plugin-api.](https://github.com/filiphric/cypress-plugin-api) created by [Filip Hric](https://github.com/filiphric), generating reports and running into github actions as CI.
 
@@ -66,7 +76,6 @@ This project automates different API responses from https://petstore.swagger.io/
 - [cypress-plugin-api.](https://github.com/filiphric/cypress-plugin-api)
 - [GitHub Actions.](https://docs.github.com/en/actions)
 - [cypress-mochawesome-reporter.](https://www.npmjs.com/package/cypress-mochawesome-reporter)
-- [ESlint.](https://eslint.org/docs/latest/user-guide/getting-started)
 
 ## Run Locally
 
