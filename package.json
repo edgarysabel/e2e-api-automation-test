@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:open": "npx cypress open --env allure=true --browser chrome",
-    "cy:run": "npx cypress run --config video=false --reporter mochawesome --browser chrome"
+    "cy:open": "npx cypress open --reporter mochawesome --browser chrome",
+    "cy:run": "npx cypress run --config video=false --reporter mochawesome --browser chrome",
+    "posttest": "npm run report:merge",
+    "report:merge": "mochawesome-merge mochawesome-report/*.json > mochawesome-report/output.json",
+    "report:generate": "marge mochawesome-report/output.json --reportDir ./mochawesome-report --reportFilename index --inline"
   },
   "author": "Edgar Ysabel",
   "license": "ISC",
@@ -14,7 +17,9 @@
     "@ngneat/falso": "^7.1.1",
     "cypress": "^13.6.1",
     "cypress-plugin-api": "^2.11.1",
-    "mochawesome": "^7.1.3"
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
   },
   "dependencies": {
     "-": "^0.0.1",

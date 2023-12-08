@@ -9,11 +9,12 @@ module.exports = defineConfig({
     // Generate JSON file to create custom reports
     json: true,
     // Customize the directory in which reports are saved
-    reportsDir: "reports/your-reports-folder",
+    reportsDir: "mochawesome-report",
     // Customize the report file name
-    reportFilename: "report",
+    reportFilename: "mochawesome",
     // Generate new report file or overwrite the a single file
     overwrite: false,
+    html: false,
   },
   e2e: {
     setupNodeEvents(on, config) {
